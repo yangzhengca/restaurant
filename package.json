@@ -1,13 +1,12 @@
 {
   "dependencies": {
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "pug": "^3.0.2"
   },
   "name": "restaurant",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ba-ahmedsatti/restaurant-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ba-ahmedsatti/restaurant-project/issues"
+  },
+  "homepage": "https://github.com/ba-ahmedsatti/restaurant-project#readme",
   "description": ""
 }

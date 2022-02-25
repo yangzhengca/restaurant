@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 8000;
 
 app.set('view engine', 'pug');
 
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('index', {});
+  const hero = [{name: 'restaurant-hero', Image: 'restaurant-hero'}];
+  res.render('index', { hero });
 });
 
 

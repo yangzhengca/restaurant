@@ -1,7 +1,8 @@
-doctype html
-html 
-head
-    title Restaurant site using Node.js, Express and Pug
-body
-    h1 Welcome to Node.js, Express and Pug
+extends ./layout.pug
+block content
+    h1 Order Delecious Food
     p This Restaurant project is just for practice
+        div.hero-container
+            img(src='/img/' + restaurant-hero.image)
+            h3=hero.name
+  
