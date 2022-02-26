@@ -3,6 +3,8 @@ extends ./layout.pug
 block content
     h1 Order Delecious Food
     p This Restaurant project is just for practice
+    each hero in hero
+        div.hero-container
             img(src='/img/' + hero.image)
             h3=hero.name
   
