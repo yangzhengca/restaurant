@@ -8,14 +8,14 @@ app.use(express.static('public'));
 
 app.get("/", (req, res) => {
   const menus = [
-    { name: 'burger', image: 'menu.jpg' },
-    { name: 'salad', image: 'menu1.jpg' },
-    { name: 'shrimp', image: 'menu3.jpg' },
-    { name: 'pasta', image: 'menu4.jpg' },
-    { name: 'steak', image: 'menu6.jpg' },
-    { name: 'pizza', image: 'menu7.jpg' },
-    { name: 'fish', image: 'menu8.jpg' },
-    { name: 'ribeye', image: 'menu9.jpg' },
+    { name: 'burger', price: 49, image: 'menu.jpg' },
+    { name: 'salad', price: 39, image: 'menu1.jpg' },
+    { name: 'shrimp', price: 30, image: 'menu3.jpg' },
+    { name: 'pasta', price: 40, image: 'menu4.jpg' },
+    { name: 'steak', price: 38, image: 'menu6.jpg' },
+    { name: 'pizza', price: 45, image: 'menu7.jpg' },
+    { name: 'fish', price: 33,image: 'menu8.jpg' },
+    { name: 'ribeye', price: 46, image: 'menu9.jpg' },
   ];
 
   res.render('menu', { menus });
