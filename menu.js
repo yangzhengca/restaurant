@@ -6,7 +6,7 @@ app.set('view engine', 'pug');
 
 app.use(express.static('public'));
 
-app.get("/", (req, res) => {
+app.get('/menu', (req, res) => {
   const menus = [
     { name: 'burger', price: 49, image: 'menu.jpg' },
     { name: 'salad', price: 39, image: 'menu1.jpg' },
@@ -19,6 +19,11 @@ app.get("/", (req, res) => {
   ];
 
   res.render('menu', { menus });
+});
+
+app.get('/home', (req, res) => {
+  const home = {name: 'hero', image: 'hero.jpg'}
+  res.render('home')
 });
 
 app.listen(port, () => {
